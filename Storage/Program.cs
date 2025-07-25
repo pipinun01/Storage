@@ -19,6 +19,9 @@ namespace Storage
             builder.Services.ConfigureSqlContext(builder.Configuration);
             builder.Services.ConfigureServiceManager();
             builder.Services.ConfigureRepositoryManager();
+            builder.Services.ConfigureRepositoryManager2();
+            builder.Services.ConfigureServiceManager3();
+
 
             var app = builder.Build();
 
